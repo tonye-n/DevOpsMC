@@ -94,6 +94,14 @@ git cat-file -p <new tree pointed from new commit>
 
 #I'm going to go ahead and create a function for my nice git log command. This may vary based on your CLI
 function gitgraph {git log --oneline --graph --decorate --all}
+
+#The bash equivalent is: 
+#alias gitgraph='git log --oneline --graph --decorate --all'
+# or
+#echo "alias gitgraph='git log --oneline --graph --decorate --all'"
+# or 
+#function gitgraph() { git log --oneline --graph --decorate --all; }
+
 #Could add this to your profile
 code $profile
 
